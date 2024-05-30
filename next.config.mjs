@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+images: {
+    remotePatterns: [
+        {
+            protocol: "https",
+            hostname: "letsenhance.io",
+            pathname: "/static/**",
+        }
+    ]
+}
+
+
+};
 
 export default nextConfig;
